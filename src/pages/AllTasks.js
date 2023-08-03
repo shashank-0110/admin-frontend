@@ -111,9 +111,9 @@ import './AllTasks.css'
         payload.id = data.id;
         payload.text = data.text;
         payload.Description = data.Description;
-        // payload.Category = data.Category;
+        payload.Category = data.Category;
         payload.date = data.date;
-        // payload.status = data.status;
+        payload.status = data.status;
       navigate("/UpdateTask",{
         state : {payload}
       }
