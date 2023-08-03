@@ -1,0 +1,11 @@
+.nav{
+    background-color: rgb(226, 226, 231);
+    padding-bottom: 16px;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+}
+.butt{
+  right: 0;
+  position: absolute;  
+}
