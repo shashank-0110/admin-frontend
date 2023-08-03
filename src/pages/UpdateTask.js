@@ -3,7 +3,7 @@ import axios from "axios";
 import { Button } from "react-bootstrap";
 import { Form } from "react-bootstrap";
 import { useLocation, useNavigate } from "react-router-dom";
-
+import '../pages/Login.css';
 export default function Update() {
   const navigate = useNavigate();
   let location = useLocation();
@@ -43,7 +43,7 @@ export default function Update() {
     alert("Hello! Data added Successfully");
   };
   return (
-    <div>
+    <div className="top">
       <Form>
         <div class="form-outline mb-4 text-center">
           <input
@@ -96,8 +96,9 @@ export default function Update() {
             <option value="Completed">Completed</option>
           </select>
         </div>
-
+        <div class="text-center">
         <Button onClick={UpdateTask}>Submit</Button>
+        </div>
       </Form>
     </div>
   );
